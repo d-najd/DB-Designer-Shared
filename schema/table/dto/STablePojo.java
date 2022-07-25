@@ -15,8 +15,6 @@ public class STablePojo extends UmlObjectPojo {
 
     private String title;
 
-    // Set<SchemaItemPojo> tableItems = new HashSet<>();
-
     private List<SItemPojo> items = new ArrayList<>();
 
 }
