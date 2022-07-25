@@ -1,5 +1,8 @@
 package com.umldesigner.submodules.UmlDesignerShared.schema.table_item.dto;
 
+import com.umldesigner.submodules.UmlDesignerShared.infrastructure.pojo.pojos.BasePojo;
+import com.umldesigner.submodules.UmlDesignerShared.schema.table.dto.STablePojo;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
