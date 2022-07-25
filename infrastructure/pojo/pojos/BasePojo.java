@@ -1,4 +1,4 @@
-package com.umldesigner.schema.UmlDesignerShared.infrastructure.pojo.pojos;
+package com.umldesigner.submodules.UmlDesignerShared.infrastructure.pojo.pojos;
 
 import lombok.Getter;
 import lombok.Setter;

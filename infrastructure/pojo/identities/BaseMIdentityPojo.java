@@ -1,4 +1,4 @@
-package com.umldesigner.schema.UmlDesignerShared.infrastructure.pojo.identities;
+package com.umldesigner.submodules.UmlDesignerShared.infrastructure.pojo.identities;
 
 import java.util.Objects;
 

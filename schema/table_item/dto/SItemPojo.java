@@ -1,4 +1,4 @@
-package com.umldesigner.submodules.UmlDesignerShared.schema.foreign_key.dto;
+package com.umldesigner.submodules.UmlDesignerShared.schema.table_item.dto;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
