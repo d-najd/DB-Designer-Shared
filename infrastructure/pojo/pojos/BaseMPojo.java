@@ -1,6 +1,6 @@
-package com.umldesigner.infrastructure.pojo.pojos;
+package com.umldesigner.schema.UmlDesignerShared.infrastructure.pojo.pojos;
 
-import com.umldesigner.infrastructure.pojo.identities.BaseMIdentityPojo;
+import com.umldesigner.schema.UmlDesignerShared.infrastructure.pojo.identities.BaseMIdentityPojo;
 
 import lombok.Getter;
 import lombok.Setter;

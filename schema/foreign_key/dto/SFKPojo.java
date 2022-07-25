@@ -1,6 +1,6 @@
-package com.umldesigner.schema.foreign_key.dto;
+package com.umldesigner.submodules.UmlDesignerShared.schema.foreign_key.dto;
 
-import com.umldesigner.infrastructure.pojo.pojos.BaseMPojo;
+import com.umldesigner.submodules.UmlDesignerShared.infrastructure.pojo.pojos.BaseMPojo;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
