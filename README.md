@@ -1,6 +1,6 @@
 ## UmlDesignerShared
 
-  Project that is used to store common infrastructure between the server and the app
+  Project that is used to store common infrastructure between the server and the Android Application
 
 ## Related Projects
 
