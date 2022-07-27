@@ -13,8 +13,8 @@ import lombok.Setter;
 @NoArgsConstructor
 public class BaseMIdentityPojo {
 
-    private String firstUuid;
-    private String secondUuid;
+    protected String firstUuid;
+    protected String secondUuid;
 
     @Override
     public boolean equals(Object o) {

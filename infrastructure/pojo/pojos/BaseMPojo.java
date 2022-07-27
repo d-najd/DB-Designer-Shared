@@ -9,6 +9,6 @@ import lombok.Setter;
 @Setter
 public class BaseMPojo {
 
-    private BaseMIdentityPojo identity;
+    protected BaseMIdentityPojo identity;
 
 }
