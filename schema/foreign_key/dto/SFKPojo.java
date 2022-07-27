@@ -12,8 +12,8 @@ import lombok.EqualsAndHashCode;
  */
 public class SFKPojo extends BaseMPojo {
 
-    private String onDelete = "ca";
+    protected String onDelete = "ca";
 
-    private String onUpdate = "ca";
+    protected String onUpdate = "ca";
 
 }

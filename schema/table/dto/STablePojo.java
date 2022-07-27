@@ -13,8 +13,8 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 public class STablePojo extends UmlObjectPojo {
 
-    private String title;
+    protected String title;
 
-    private List<SItemPojo> items = new ArrayList<>();
+    protected List<SItemPojo> items = new ArrayList<>();
 
 }

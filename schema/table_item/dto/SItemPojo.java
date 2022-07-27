@@ -13,14 +13,14 @@ public class SItemPojo extends BasePojo {
     // the pojo has no need to know positions
     // private Integer position;
 
-    private String type;
+    protected String type;
 
-    private String tableUuid_;
+    protected String tableUuid_;
 
-    private String value;
+    protected String value;
 
-    private STablePojo table;
+    protected STablePojo table;
 
-    private Boolean isPrimaryKey = false;
+    protected Boolean isPrimaryKey = false;
 
 }
