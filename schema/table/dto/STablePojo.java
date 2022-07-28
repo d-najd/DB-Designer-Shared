@@ -15,6 +15,6 @@ public class STablePojo extends UmlObjectPojo {
 
     protected String title;
 
-    protected List<SItemPojo> items = new ArrayList<>();
+    protected List<? extends SItemPojo> items = new ArrayList<>();
 
 }
