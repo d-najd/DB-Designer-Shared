@@ -12,6 +12,10 @@ import lombok.EqualsAndHashCode;
  */
 public class SFKPojo extends BaseMPojo {
 
+    protected String firstTableUuid;
+    
+    protected String secondTableUuid;
+
     protected String onDelete = "ca";
 
     protected String onUpdate = "ca";
