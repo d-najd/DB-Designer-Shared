@@ -1,14 +1,14 @@
 package com.umldesigner.submodules.UmlDesignerShared.schema.table_item.dto;
 
 import com.umldesigner.submodules.UmlDesignerShared.infrastructure.pojo.pojos.BasePojo;
+import com.umldesigner.submodules.UmlDesignerShared.infrastructure.pojo.utils.MyCloneable;
 import com.umldesigner.submodules.UmlDesignerShared.schema.table.dto.STablePojo;
-
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class SItemPojo extends BasePojo {
+public class SItemPojo extends BasePojo implements MyCloneable<SItemPojo> {
 
     // the pojo has no need to know positions
     // private Integer position;
@@ -25,4 +25,21 @@ public class SItemPojo extends BasePojo {
 
     protected Boolean isPrimaryKey = false;
 
+    /**
+     * @see #cloneWithoutTable()
+     */
+    @Override
+    public SItemPojo clone() {
+        try {
+            SItemPojo clone = (SItemPojo) super.clone();
+            STablePojo tableData = clone.getTable();
+            if (tableData != null) {
+                clone.setTable(tableData.clone());
+            }
+
+            return clone;
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
+        }
+    }
 }
