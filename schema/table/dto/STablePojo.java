@@ -17,6 +17,18 @@ public class STablePojo extends UmlObjectPojo implements MyCloneable<STablePojo>
 
     protected List<? extends SItemPojo> items = new ArrayList<>();
 
+
+    /**
+     * making sure the items don't get set to null so that we don't get null exception when we try to get size
+     * of the list for example
+     */
+    public void setItems(List<? extends SItemPojo> items) {
+        if(items == null){
+            items = new ArrayList<>();
+        }
+        this.items = items;
+    }
+
     @Override
     public STablePojo clone() {
         try {
@@ -28,12 +40,7 @@ public class STablePojo extends UmlObjectPojo implements MyCloneable<STablePojo>
             List<SItemPojo> clonedItems = new ArrayList<>();
 
             for (SItemPojo item : items1) {
-                //TODO Umm EXCUSE ME the table is set to null yet it is not? what? the hell?
-
                 item.setTable(null);
-                if(item.getTable() != null){
-                    item = item;
-                }
 
                 SItemPojo clonedItem = item.clone();
 

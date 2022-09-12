@@ -3,7 +3,6 @@ package com.umldesigner.submodules.UmlDesignerShared.schema.table_item.dto;
 import com.umldesigner.submodules.UmlDesignerShared.infrastructure.pojo.pojos.BasePojo;
 import com.umldesigner.submodules.UmlDesignerShared.infrastructure.pojo.utils.MyCloneable;
 import com.umldesigner.submodules.UmlDesignerShared.schema.table.dto.STablePojo;
-
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -26,6 +25,9 @@ public class SItemPojo extends BasePojo implements MyCloneable<SItemPojo> {
 
     protected Boolean isPrimaryKey = false;
 
+    /**
+     * @see #cloneWithoutTable()
+     */
     @Override
     public SItemPojo clone() {
         try {
@@ -35,7 +37,7 @@ public class SItemPojo extends BasePojo implements MyCloneable<SItemPojo> {
                 clone.setTable(tableData.clone());
             }
 
-            return (SItemPojo) super.clone();
+            return clone;
         } catch (CloneNotSupportedException e) {
             throw new AssertionError();
         }
