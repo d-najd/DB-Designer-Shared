@@ -2,8 +2,6 @@ package com.umldesigner.submodules.UmlDesignerShared.schema.foreign_key.dto;
 
 import com.umldesigner.submodules.UmlDesignerShared.infrastructure.pojo.pojos.BasePojo;
 import com.umldesigner.submodules.UmlDesignerShared.infrastructure.pojo.utils.MyCloneable;
-import com.umldesigner.submodules.UmlDesignerShared.schema.item_info.SItemInfoPojo;
-
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -16,6 +14,8 @@ public class SFKPojo extends BasePojo implements MyCloneable<SFKPojo> {
 
     protected String referencedUuid;
 
+    protected String referencedTableUuid;
+    
     protected String onDelete = "ca";
 
     protected String onUpdate = "ca";

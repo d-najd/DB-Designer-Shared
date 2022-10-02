@@ -1,13 +1,12 @@
 package com.umldesigner.submodules.UmlDesignerShared.schema.item_info;
 
-import java.util.Set;
-
 import com.umldesigner.submodules.UmlDesignerShared.infrastructure.pojo.pojos.BasePojo;
 import com.umldesigner.submodules.UmlDesignerShared.infrastructure.pojo.utils.MyCloneable;
 import com.umldesigner.submodules.UmlDesignerShared.schema.foreign_key.dto.SFKPojo;
-
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+
+import java.util.Set;
 
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -25,7 +24,7 @@ public class SItemInfoPojo extends BasePojo implements MyCloneable<SItemInfoPojo
 
     protected SFKPojo foreignKey;
 
-    protected Set<SFKPojo> referencedForeignKeys;
+    protected Set<? extends SFKPojo> referencedForeignKeys;
 
     // protected SItemPojo item;
 

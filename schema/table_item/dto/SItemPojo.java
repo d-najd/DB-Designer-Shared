@@ -24,9 +24,6 @@ public class SItemPojo extends BasePojo implements MyCloneable<SItemPojo> {
 
     protected STablePojo table;
 
-    /**
-     * @see #cloneWithoutTable()
-     */
     @Override
     public SItemPojo clone() {
         try {
