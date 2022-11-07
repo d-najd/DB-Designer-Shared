@@ -1,8 +1,8 @@
 ## UmlDesignerShared
 
-  Project that is used to store common infrastructure between the server and the Android Application
+  Project that is used to store common infrastructure between the Backend and the Android Application
 
 ## Related Projects
 
-  The Android Application: https://github.com/d-najd/UmlDesigner
-  The Server: https://github.com/d-najd/UmlDesignerAppApi
+  Android Application: https://github.com/d-najd/UmlDesigner
+  Backend: https://github.com/d-najd/UmlDesignerAppApi
