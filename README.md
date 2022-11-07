@@ -1,8 +1,7 @@
-## UmlDesignerShared
+## DB Designer Shared
 
   Project that is used to store common infrastructure between the Backend and the Android Application
 
 ## Related Projects
-
-  Android Application: https://github.com/d-najd/UmlDesigner
-  Backend: https://github.com/d-najd/UmlDesignerAppApi
+- [Android App](https://github.com/d-najd/DB-Designer/)
+- [Backend](https://github.com/d-najd/DB-Designer-Backend)
